@@ -4,7 +4,8 @@ class Login extends Component {
     render() {
         return (
             <div>
-                index del login
+                Registro
+                <input placeholder="Name"></input>
             </div>
         );
     }
