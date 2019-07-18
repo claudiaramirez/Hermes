@@ -18,10 +18,10 @@ class HeaderApp extends Component {
                     <Link to="/">Home</Link>
                   </li>
                   <li>
-                    <Link to="/stuff/">About</Link>
+                    <Link to="/stuff/">stuff</Link>
                   </li>
                   <li>
-                    <Link to="/contact/">Users</Link>
+                    <Link to="/contact/">contac</Link>
                   </li>
                 </ul>
               </nav>

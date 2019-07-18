@@ -12,7 +12,7 @@ class NavContainer extends Component {
     render() {
         return (
             <div className="nav-container">
-                 <Route path="/" exact component={Home} />
+                <Route path="/" exact component={Home} />
                 <Route path="/stuff" component={Stuff} />
                 <Route path="/contact" component={Contact} />
                 
