@@ -4,8 +4,7 @@ class Login extends Component {
     render() {
         return (
             <div>
-                Registro
-                <input placeholder="Name"></input>
+                Hola
             </div>
         );
     }
