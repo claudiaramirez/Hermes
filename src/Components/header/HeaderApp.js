@@ -1,7 +1,9 @@
 import React, { Component } from 'react';
 import {
+    Route,
     BrowserRouter,
-    Link
+    Link,
+    Switch
   }
     from "react-router-dom";
   import NavContainer from "../navContainer/NavContainer"
@@ -10,7 +12,7 @@ import {
 class HeaderApp extends Component {
     render() {
         return (
-            <BrowserRouter>
+            <BrowserRouter >
             <div>
               <nav>
                 <ul>
@@ -18,15 +20,17 @@ class HeaderApp extends Component {
                     <Link to="/">Home</Link>
                   </li>
                   <li>
-                    <Link to="/stuff/">stuff</Link>
+                    <Link to="/stuff/">About</Link>
                   </li>
                   <li>
-                    <Link to="/contact/">contac</Link>
+                    <Link to="/contact/">Users</Link>
                   </li>
                 </ul>
               </nav>
-          
-              <NavContainer/>
+
+              <Switch>
+              <NavContainer props={this.props}/>
+              </Switch>
                
             </div>
           </BrowserRouter>
