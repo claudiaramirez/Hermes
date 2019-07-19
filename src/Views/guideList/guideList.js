@@ -24,7 +24,7 @@ class GuideList extends Component {
         const camino = this.state.Lista_de_guia.map((item, i) => {
       if ( item.estatus.estatus === "camino") {
             return(
-            <Card  key={item.num_guia}>
+            <Card className="card-item" key={item.num_guia}>
             <Card.Body>
             <Card.Title>{item.username}</Card.Title>
             <Card.Text className="text-card-format">
@@ -42,7 +42,7 @@ class GuideList extends Component {
 const transito = this.state.Lista_de_guia.map((item, i) => {
     if ( item.estatus.estatus === "transito") {
         return(
-                <Card  key={item.num_guia}>
+                <Card  className="card-item" key={item.num_guia}>
                 <Card.Body>
                 <Card.Title>{item.username}</Card.Title>
                 <Card.Text className="text-card-format">
@@ -60,7 +60,7 @@ const transito = this.state.Lista_de_guia.map((item, i) => {
     const entregado = this.state.Lista_de_guia.map((item, i) => {
         if ( item.estatus.estatus === "entregado") {
             return(
-                    <Card  key={item.num_guia}>
+                    <Card  className="card-item" key={item.num_guia}>
                     <Card.Body>
                     <Card.Title>{item.username}</Card.Title>
                     <Card.Text className="text-card-format">
@@ -78,14 +78,17 @@ const transito = this.state.Lista_de_guia.map((item, i) => {
 
         return (
             <div>
-            <Tabs defaultActiveKey="camino" transition={false} id="noanim-tab-example">
+              <div className="envio">
+                <p className="title-envio">Envío</p>
+              </div>
+            <Tabs  defaultActiveKey="camino" transition={false} id="noanim-tab-example">
             <Tab eventKey="camino" title="Camino" tabClassName='header_format'>
            {camino}
             </Tab>
             <Tab eventKey="transito" title="Transito" tabClassName='header_format'>
               {transito}
             </Tab>
-            <Tab eventKey="entregado" title="Entregado" tabClassName='header_format'>
+            <Tab  eventKey="entregado" title="Entregado" tabClassName='header_format'>
               {entregado}
             </Tab>
           </Tabs>

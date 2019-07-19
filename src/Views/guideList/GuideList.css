@@ -17,3 +17,50 @@
     text-align: left;
  }
 
+ .envio{
+    width: 100%;
+    height: 50px;
+    margin-bottom: 40px;
+ }
+ .title-envio{
+     font-weight: 600;
+     font-size: 2rem;
+    
+}
+.header_format{
+    width: 33.33%;
+    color: #fff;
+    border: none;
+    background-color: transparent;
+    text-align: center;
+   
+}
+.header_format:hover{
+  
+    color: #fff;
+    border: none;
+   
+   
+}
+.card-body{
+    display: inline-block;
+    width: 100%;
+    font-size: 0;
+}
+
+.card-item{
+    margin-top: 30px; 
+    width: 95%;
+    margin: auto;
+    margin-top: 30px;
+
+}
+.ounded-circle {
+    display: inline-block;
+    width: 30%;
+
+}
+.card-title{
+    display: inline-block;
+    width: 70%;
+}

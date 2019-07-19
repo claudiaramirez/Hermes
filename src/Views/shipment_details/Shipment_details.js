@@ -24,6 +24,9 @@ class Shipment_details extends Component {
 
     return (
       <div className="card-format">
+        <div className="envio">
+                <p className="title-envio">Detalle del envío</p>
+              </div>
         <div>
           {
             this.state.listaGuias.map((value,i) => {

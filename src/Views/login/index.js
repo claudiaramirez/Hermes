@@ -35,7 +35,28 @@ class Login extends Component {
         }
 
         this.props.history.push('./list')
+
+        // const request = {
+        //     email:this.state.emailSingIn,
+        //     password:this.state.passSingIn
+        // }
+        // console.log(request)
+        // fetch('http://192.168.137.200:1337/login',{
+        //     method: 'POST', // or 'PUT'
+        //     body: JSON.stringify(request), // data can be `string` or {object}!
+        //     headers:{
+        //       'Content-Type': 'application/json'
+        //     }
+        // }).then(response=>response.json())
+        // .then(responseJson=>{
+        //     if(responseJson.success){
+        //     this.props.history.push('./list')
+        //     } else {
+        //         alert(responseJson.message)
+        //     }
+        // })
     }
+
 
     render() {
         return (
