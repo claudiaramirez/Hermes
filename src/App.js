@@ -5,7 +5,7 @@ import Login from './Views/login';
 
 import Home from './Components/Home/Home';
 import SignUp from './Views/signup';
-
+import Shipment_details from './Views/shipment_details/Shipment_details';
 
 class App extends Component {
   state = {
@@ -18,14 +18,14 @@ class App extends Component {
       });
     };
 
-
   render() {
     return (
       <div className="App">
-      <HeaderLogin/>
-      <Login/>
+      <HeaderLogin/> 
       <SignUp/>
-    
+      <HeaderApp/>
+      <Login/>
+      <Shipment_details />
     </div>
     
     );
