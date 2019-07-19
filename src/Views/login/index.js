@@ -4,12 +4,13 @@ import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
 import HeaderLogin from '../../Components/header/HeaderLogin';
 
-
-
 class Login extends Component {
     constructor(props){
         super(props)
-        console.log(this.props)
+
+    }
+    submit(event){
+        event.preventDefault();  
 
     }
 
@@ -42,7 +43,5 @@ class Login extends Component {
             </div>
         );
     }
-
 }
-
 export default Login;
