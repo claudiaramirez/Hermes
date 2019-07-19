@@ -21,6 +21,12 @@ class SignUp extends Component {
         console.log(user)
     }; 
     
+
+
+    submit(event){
+        event.preventDefault();
+    }
+
         render() {
         return (
             <div>
@@ -29,6 +35,7 @@ class SignUp extends Component {
             <div className="signup font-weight-bold">
                 <Form>
                 <Form.Group controlId="formBasicName">
+
                         <Form.Label>Nombre</Form.Label>
                         <Form.Control value={this.state.name} onChange={(event)=>{
                             this.setState({

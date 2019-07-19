@@ -1,9 +1,4 @@
 import React, { Component } from 'react';
-import HeaderLogin from './Components/header/HeaderLogin'; 
-import HeaderApp from './Components/header/HeaderApp';
-import Login from './Views/login'; 
-
-import Home from './Components/Home/Home';
 import {
   Route,
   BrowserRouter,
@@ -11,7 +6,8 @@ import {
   Switch
 }
   from "react-router-dom";
-import NavContainer from "./Components/navContainer/NavContainer"
+import NavContainer from "./Components/navContainer/NavContainer";
+import './App.css'
 
 class App extends Component {
 
@@ -19,21 +15,18 @@ class App extends Component {
     return (
       <div className="App">
       
-      <BrowserRouter >
+      <BrowserRouter>
       <div>
-        <nav>
-          <ul>
+        <nav className="navbar-login">
+          <ul className="header">
             <li>
               <Link to="/">Login</Link>
             </li>
             <li>
-              <Link to="/signup/">Sign Up</Link>
+              <Link to="/signup/" >Sign Up</Link>
             </li>
             <li>
-              <Link to="/stuff/">About</Link>
-            </li>
-            <li>
-              <Link to="/contact/">Users</Link>
+              <Link to="/list/">En tránsito</Link>
             </li>
           </ul>
         </nav>
