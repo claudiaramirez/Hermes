@@ -4,9 +4,7 @@ import {
   }
     from "react-router-dom";
   import Login from "../../Views/login/index";
-  import Main from "../Components-Router/Home";
-  import Stuff from "../Components-Router/Stuff";
-  import Contact from "../Components-Router/Contact";
+  import GuideList from "../../Views/guideList/guideList";
   import Signup from "../../Views/signup/index"
 
 
@@ -16,8 +14,8 @@ class NavContainer extends Component {
             <div className="nav-container">
                  <Route path="/" exact component={Login} />
                  <Route path="/signup"  component={Signup} />
-                <Route path="/stuff" component={Stuff} />
-                <Route path="/contact" component={Contact} />
+                <Route path="/list" component={GuideList} />
+                <Route path="/detalle" component={GuideList} />
               
             </div>
         );
