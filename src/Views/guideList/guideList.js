@@ -10,25 +10,27 @@ import { Lista_de_guia } from  '../../data/Lista_de_guia';
 
 
 class GuideList extends Component {
-    constructor(props){
-        super(props);
-        this.state ={
-            Lista_de_guia,
-            id: "",
-        }
-    }
+   constructor(props){
+       super(props);
+       this.state ={
+           Lista_de_guia,
+           id: "",
+       }
+   }
 
     render() {
+
+
         const camino = this.state.Lista_de_guia.map((item, i) => {
       if ( item.estatus.estatus === "camino") {
             return(
             <Card  key={item.num_guia}>
             <Card.Body>
-            <Card.Title>{item.tienda}</Card.Title>
-            <Card.Text>
+            <Card.Title>{item.username}</Card.Title>
+            <Card.Text className="text-card-format">
               {`Guía: ${item.num_guia}`}
-            </Card.Text>
-            <Card.Text>
+            </Card.Text >
+            <Card.Text className="text-card-format">
              {`Entrega estimada: ${item.created_at}`}
              </Card.Text>
             <div><img onClick={()=>this.props.history.push('/detalle')} id={item.id} src={Icon_sig} alt="icono" className="icon_format"></img></div>
@@ -42,11 +44,11 @@ const transito = this.state.Lista_de_guia.map((item, i) => {
         return(
                 <Card  key={item.num_guia}>
                 <Card.Body>
-                <Card.Title>{item.tienda}</Card.Title>
-                <Card.Text>
+                <Card.Title>{item.username}</Card.Title>
+                <Card.Text className="text-card-format">
                   {`Guía: ${item.num_guia}`}
                 </Card.Text>
-                <Card.Text>
+                <Card.Text className="text-card-format">
                  {`Entrega estimada: ${item.created_at}`}
                  </Card.Text>
                 <div><img onClick={()=>this.props.history.push('/detalle')} id={item.id} src={Icon_sig} alt="icono" className="icon_format"></img></div>
@@ -60,11 +62,11 @@ const transito = this.state.Lista_de_guia.map((item, i) => {
             return(
                     <Card  key={item.num_guia}>
                     <Card.Body>
-                    <Card.Title>{item.tienda}</Card.Title>
-                    <Card.Text>
+                    <Card.Title>{item.username}</Card.Title>
+                    <Card.Text className="text-card-format">
                       {`Guía: ${item.num_guia}`}
                     </Card.Text>
-                    <Card.Text>
+                    <Card.Text className="text-card-format">
                      {`Entrega estimada: ${item.created_at}`}
                      </Card.Text>
                     <div><img onClick={()=>this.props.history.push('/detalle')} id={item.id} src={Icon_sig} alt="icono" className="icon_format"></img></div>
@@ -90,7 +92,8 @@ const transito = this.state.Lista_de_guia.map((item, i) => {
             </div>
         );
 
-    }
+   }
 }
 
 export default GuideList;
+

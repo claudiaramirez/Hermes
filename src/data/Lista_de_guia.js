@@ -6,7 +6,12 @@ export const Lista_de_guia = [
        created_at: "2019-07-18",
        paqueteria: "DHL",
        img_paq: "https://www.carayol.com/wp-content/uploads/2018/01/dhl-logo.jpg",
-       tienda: "Pata Hueca",
+       username: "Pata Hueca",
+       UserLogin: {
+        "_id": "4773823432",
+        "email": "claudia@hotmail.com",
+        "pass": "1234"
+        },
        estatus: {
            id: "01_id_status",
            descripcion: "El paquete salio de almacen",
@@ -20,7 +25,12 @@ export const Lista_de_guia = [
        created_at: "2019-07-19",
        paqueteria: "DHL",
        img_paq: "https://www.carayol.com/wp-content/uploads/2018/01/dhl-logo.jpg",
-       tienda: "Pata Hueca",
+       username: "Pata Hueca",
+       UserLogin: {
+        "_id": "4773823432",
+        "email": "claudia@hotmail.com",
+        "pass": "1234"
+        },
        estatus: {
            id: "02_id_status",
            descripcion: "El paquete salio de DHL rumbo a domicilio de entrega",
@@ -34,7 +44,12 @@ export const Lista_de_guia = [
        created_at: "2019-07-11",
        paqueteria: "DHL",
        img_paq: "https://www.carayol.com/wp-content/uploads/2018/01/dhl-logo.jpg",
-       tienda: "Pata Hueca",
+       username: "Pata Hueca",
+       UserLogin: {
+        "_id": "4773823432",
+        "email": "claudia@hotmail.com",
+        "pass": "1234"
+        },
        estatus: {
            id: "03_id_status",
            descripcion: "El paquete se entrego",
@@ -48,7 +63,12 @@ export const Lista_de_guia = [
        created_at: "2019-07-19",
        paqueteria: "DHL",
        img_paq: "https://www.carayol.com/wp-content/uploads/2018/01/dhl-logo.jpg",
-       tienda: "Pata Hueca",
+       username: "Pata Hueca",
+       UserLogin: {
+        "_id": "4773823432",
+        "email": "claudia@hotmail.com",
+        "pass": "1234"
+        },
        estatus: {
            id: "04_id_status",
            descripcion: "El paquete va hacia oficina DHL cercana a domicilio de entrega",
@@ -56,4 +76,5 @@ export const Lista_de_guia = [
            estatus: "transito",
            }
    },
+
 ]

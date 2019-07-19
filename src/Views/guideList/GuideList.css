@@ -1,3 +1,4 @@
+
 .header_format{
     background: #f88181;
     color: black;
@@ -10,3 +11,9 @@
 .card-title{
     color: #3566ac !important;
  }
+
+ .text-card-format{
+    color: black;
+    text-align: left;
+ }
+
