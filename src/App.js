@@ -4,7 +4,6 @@ import HeaderApp from './Components/header/HeaderApp';
 import Login from './Views/login'; 
 
 import Home from './Components/Home/Home';
-
 import {
   Route,
   BrowserRouter,
@@ -14,20 +13,21 @@ import {
   from "react-router-dom";
 import NavContainer from "./Components/navContainer/NavContainer"
 
-
 class App extends Component {
+
   render() {
     return (
       <div className="App">
+      
       <BrowserRouter >
       <div>
         <nav>
           <ul>
             <li>
-              <Link to="/">Home</Link>
+              <Link to="/">Login</Link>
             </li>
             <li>
-              <Link to="/">Main</Link>
+              <Link to="/signup/">Sign Up</Link>
             </li>
             <li>
               <Link to="/stuff/">About</Link>
@@ -45,7 +45,6 @@ class App extends Component {
       </div>
     </BrowserRouter>
     </div>
-    
     );
   }
 }

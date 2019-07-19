@@ -3,11 +3,16 @@ import './signup.css';
 import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
 import Home from '../../Components/Components-Router/Home';
+import HeaderLogin from '../../Components/header/HeaderLogin';
+
 
 
 class SignUp extends Component {
         render() {
         return (
+            <div>
+                <HeaderLogin props={this.props}></HeaderLogin>
+            
             <div className="signup font-weight-bold">
                 <Form>
                 <Form.Group controlId="formBasicEmail">
@@ -33,6 +38,7 @@ class SignUp extends Component {
 
                     <Button variant="primary" type="submit" className="btn-signup" onSubmit={this.SingUpEvent}>Registrate</Button>
                     </Form>
+            </div>
             </div>
         );
     }
