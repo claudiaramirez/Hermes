@@ -32,6 +32,8 @@ class Login extends Component {
                             <Form.Label>Contraseña</Form.Label>
                             <Form.Control className="input-signup" type="password" placeholder="8-10 caracteres" />
                         </Form.Group>
+                            <p className="forgot-pass">Olvisate tu contraseña</p>
+                            <p>Recuperara ahora</p>
                             <Button className="btn-signup" type="submit">Iniciar Sesión</Button>
                         </Form>
                 </div>
