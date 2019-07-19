@@ -3,7 +3,7 @@ import '../signup/signup.css';
 import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
 import HeaderLogin from '../../Components/header/HeaderLogin';
-import UserLogin from '../../Components/data/registros';
+import {UserLogin} from '../../data/registros';
 
 class Login extends Component {
     constructor(props){
@@ -17,24 +17,24 @@ class Login extends Component {
     }
 
     singIn(event){
-        // event.preventDefault();
-        // let findUser=undefined
-        // UserLogin.forEach(item => {
-        //     if(item.email==this.state.emailSingIn){
-        //         if(item.pass==this.state.passSingIn){
-        //             findUser=item
-        //         }
-        //     }
-        // });
+        event.preventDefault();
+        let findUser=undefined
+        UserLogin.forEach(item => {
+            if(item.email==this.state.emailSingIn){
+                if(item.pass==this.state.passSingIn){
+                    findUser=item
+                }
+            }
+        });
 
-        // if(findUser){
-        //     alert('OK');
+        if(findUser){
+            alert('Correo correcto');
 
-        // }else{
-        //     alert('usuaario no encontrado');
-        // }
+        }else{
+            alert('usuaario no encontrado');
+        }
 
-        // this.props.history.push('./list')
+        this.props.history.push('./list')
     }
 
     render() {
