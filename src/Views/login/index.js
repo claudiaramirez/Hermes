@@ -3,13 +3,9 @@ import '../signup/signup.css';
 import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
 
-
-
 class Login extends Component {
     constructor(props){
         super(props)
-
-
     }
     submit(event){
         event.preventDefault();  
@@ -42,7 +38,5 @@ class Login extends Component {
             </div>
         );
     }
-
 }
-
 export default Login;
