@@ -10,7 +10,20 @@ import NavContainer from "./Components/navContainer/NavContainer";
 import './App.css'
 
 class App extends Component {
+/*   constructor(props) {
+    super(props);
+    this.state = {
+      path: '',
+    }
+};
 
+componentWillMount(){
+  if(window.location.href.includes('/signup')){
+    alert('hola')
+  }
+}; 
+ */
+  
   render() {
     return (
       <div className="App">
