@@ -8,13 +8,19 @@ import HeaderLogin from '../../Components/header/HeaderLogin';
 
 
 class SignUp extends Component {
+    constructor(props){
+        super(props)
+    }
+    submit(event){
+        event.preventDefault();
+    }
         render() {
         return (
             <div>
                 <HeaderLogin props={this.props}></HeaderLogin>
             
             <div className="signup font-weight-bold">
-                <Form>
+                <Form onSubmit={()=>this.props.history.push('./list')}>
                 <Form.Group controlId="formBasicEmail">
                         <Form.Label>Nombre</Form.Label>
                         <Form.Control className="input-signup" type="email" placeholder="Escribe tu nombre completo" />
