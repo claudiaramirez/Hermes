@@ -22,14 +22,13 @@ class Shipment_details extends Component {
   render() {
 
 
-
     return (
       <div className="card-format">
         <div>
           {
-            this.state.listaGuias.map((value) => {
+            this.state.listaGuias.map((value,i) => {
               return value.id === "01guia" ? (
-                <div className="card-format">
+                <div key={value.id} className="card-format">
                   <Card  style={{ width: '21rem' }}>
                     <Card.Body>
                       <Card.Img variant="top" className="rounded-circle img-size" src={ShippingCompanyLogo} />
@@ -49,7 +48,9 @@ class Shipment_details extends Component {
                            </Accordion.Toggle>
                         </Card.Header>
                         <Accordion.Collapse eventKey="0">
-                          <Card.Body></Card.Body>
+                          <Card.Body>
+                          <Timeline items={value.historia} />
+                          </Card.Body>
                         </Accordion.Collapse>
                       </Card>
                     </Accordion>

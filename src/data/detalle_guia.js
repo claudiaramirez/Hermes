@@ -18,11 +18,15 @@ export const detalle_guia = [
             "tipo": "cliente",
             "num_guia": "0542971",
         },
-        "historia": [
-            "Entregado",
-            "Transportista",
-            "Recolectado",
-            "Empaquetado"
+        "historia": [{
+            "ts": "2017-09-17T12:22:46.587Z",
+            "text": "Entregado" },
+            {"ts": "2017-09-17T12:21:46.587Z",
+            "text":"Transportista"},
+            {"ts": "2017-09-17T12:20:46.587Z",
+            "text":"Recolectado"},
+            {"ts": "2017-09-16T12:22:46.587Z",
+            "text":"Empaquetado"}
         ],
         "fecha": "07/05/2019",
         "img_paq": "https://www.carayol.com/wp-content/uploads/2018/01/dhl-logo.jpg",
