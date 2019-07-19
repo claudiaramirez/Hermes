@@ -6,15 +6,6 @@ import Home from '../../Components/Components-Router/Home';
 
 
 class SignUp extends Component {
-    state = {
-        SignUpSuccess: false,
-      };
-
-      SingUpEvent(e) {
-          e.preventDefault();
-        const status = this.state.SignUpSuccess
-        this.setState({ status: true });
-      }
 
     render() {
 
