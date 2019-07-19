@@ -25,10 +25,7 @@
 .link-terminos{
     color: red; 
 }
-.btn-signup{
-    
-  
-}
+
 .btn-signup{
     width: 200px;
     position: absolute;
@@ -38,5 +35,9 @@
     border-radius: 25px;
     background-color: #ed3833;
     border: 1px solid #ed3833
+}
 
+p {
+    color: white; 
+    text-align: center;
 }
