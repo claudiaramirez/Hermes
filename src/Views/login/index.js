@@ -2,24 +2,23 @@ import React, { Component } from 'react';
 import '../signup/signup.css'; 
 import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
+import HeaderLogin from '../../Components/header/HeaderLogin';
 
 
 
 class Login extends Component {
     constructor(props){
         super(props)
-
-
-    }
-    submit(event){
-        event.preventDefault();  
+        console.log(this.props)
 
     }
 
     render() {
         return (
+            <div>
+            <HeaderLogin props={this.props}></HeaderLogin>
             <div className="signup font-weight-bold">
-                <Form onSubmit={()=>this.props.history.push('./main')}>
+                <Form onSubmit={()=>this.props.history.push('./stuff')}>
                 <Form.Group controlId="formBasicEmail">
                         <Form.Label>Nombre</Form.Label>
                         <Form.Control className="input-signup" type="email" placeholder="Escribe tu nombre completo" />
@@ -39,6 +38,7 @@ class Login extends Component {
                     </Form.Group>
                         <Button className="btn-signup" type="submit">Iniciar Sesión</Button>
                     </Form>
+            </div>
             </div>
         );
     }
