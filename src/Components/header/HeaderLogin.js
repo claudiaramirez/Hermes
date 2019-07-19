@@ -26,6 +26,7 @@ class HeaderLogin extends Component {
                     <Row>
                         <Col xs={6} onClick={()=>this.props.props.history.push('./')}>Ingresar</Col>
                         <Col xs={6} onClick={()=>this.props.props.history.push('./signup')}>Registrate</Col>
+                        <Col xs={6} onClick={()=>this.props.props.history.push('./guide')}>Continuar sin registro</Col>
                     </Row>
                 </Container>    
             </div>
