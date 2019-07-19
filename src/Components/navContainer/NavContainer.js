@@ -6,9 +6,8 @@ import {
   import Login from "../../Views/login/index";
   import GuideList from "../../Views/guideList/guideList";
   import Guide from "../../Views/noSignUp/index";
-
   import Signup from "../../Views/signup/index"
-import Shipment_details from '../../Views/shipment_details/Shipment_details';
+  import Shipment_details from '../../Views/shipment_details/Shipment_details';
 
 
 class NavContainer extends Component {

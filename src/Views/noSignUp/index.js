@@ -12,25 +12,38 @@ class noSignUp extends Component {
         this.state = {
           data,
           guide_num: '',
+          item: {},
         }
         this.filterByGuideNum = this.filterByGuideNum.bind(this); 
-      }
+      };
 
-    filterByGuideNum(event){
+    filterByGuideNum(){
         this.state.data.map((element)=>{
-            if(this.state.guide_num ===element.num_guia){
-                console.log(element)
+            if(this.state.guide_num === element.num_guia){
+                this.setState({
+                    item: element
+                })
+            } else if(this.state.guide_num !== element.num_guia){
+                console.log('No funciona')
             }
         })
        
     }
         render() {
-            console.log(this.state)
 
             const data1 = this.state.data.map((element)=>{
-                return (
-                    <div key={element.id}>{element.id}</div>
-                )
+                if(element === this.state.item){
+                    return (
+                        <div key={element.id}>
+                            <p>{element.num_guia}</p>
+                            <p>Paquetería: {element.paqueteria}</p>
+                            <p>{element.created_at}</p>
+                            <p>Estatus: {element.estatus.estatus}</p>
+                            <p>{element.estatus.descripcion}</p>
+                        </div>
+                    )
+                }
+            
             })
 
         return (
