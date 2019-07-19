@@ -7,9 +7,8 @@ ul.header li {
     margin: 0;
   }
   ul.header {
-    background-color: blue; 
+    background-color: #3566ac; 
     padding: 0;
-    height: 15vh;
   }
   ul.header li a {
     color: #FFF;
@@ -18,4 +17,6 @@ ul.header li {
     padding: 20px;
     display: inline-block;
     padding-top: 10vh;
+  
+    
 }
