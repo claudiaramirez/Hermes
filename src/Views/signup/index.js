@@ -6,11 +6,29 @@ import Home from '../../Components/Components-Router/Home';
 
 
 class SignUp extends Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+            name: '',
+            email: '',
+            password: '',
+        }
+        this.submit = this.submit.bind(this);
+    };
 
-    render() {
+    submit = (event) => {
+        event.preventDefault();
+        const user = this.state;
+        console.log(user);
+        this.props.history.push('./list')
+    }
+
 
         return (
             <div className="signup font-weight-bold">
+
+                <Form onSubmit={this.submit}>
+                <Form.Group controlId="formBasicName">
 
                 <Form>
                 <Form.Group controlId="formBasicEmail">
@@ -33,8 +51,7 @@ class SignUp extends Component {
                         <Form.Check className="check" type="checkbox" />
                         <span>Acepto los <a className="link-terminos" target="_blank" href="">Términos y Condiciones</a></span> 
                     </Form.Group>
-
-                    <Button variant="primary" type="submit" className="btn-signup" onSubmit={this.SingUpEvent}>Registrate</Button>
+                    <Button variant="primary" type="submit" className="btn-signup" value={this.state}>Registrate</Button>
                     </Form>
             </div>
         );
