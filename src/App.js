@@ -10,13 +10,18 @@ import NavContainer from "./Components/navContainer/NavContainer";
 import './App.css'
 
 class App extends Component {
+  constructor(props){
+    super(props)
+  }
 
   render() {
+    console.log(window.location.pathname)
     return (
       <div className="App">
       
       <BrowserRouter>
       <div>
+        {window.location.pathname!= '/' && window.location.pathname!= '/signup' ?  
         <nav className="navbar-login">
           <ul className="header">
             <li>
@@ -33,6 +38,7 @@ class App extends Component {
             </li>
           </ul>
         </nav>
+        : null}
 
         <Switch>
         <NavContainer props={this.props.history}/>

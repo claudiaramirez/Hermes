@@ -12,23 +12,25 @@ import { Lista_de_guia } from  '../../data/Lista_de_guia';
 
 
 class GuideList extends Component {
-    constructor(){
-        super();
+    constructor(props){
+        super(props);
         this.state ={
-            Lista_de_guia
+            Lista_de_guia,
+            id: "",
         }
     }
+
     render() {
         const camino = this.state.Lista_de_guia.map((item, i) => {
       if ( item.estatus.estatus == "camino") {
             return(
-            <Card key={item.num_guia}>
+            <Card  key={item.num_guia}>
             <Card.Body>
             <Card.Title>{item.tienda}</Card.Title>
             <Card.Text>
               {`Guía: ${item.num_guia}`}
             </Card.Text>
-            <div><img id={item.id} src={Icon_sig} alt="icono" className="icon_format"></img></div>
+            <div><img onClick={()=>this.props.history.push('/detalle')} id={item.id} src={Icon_sig} alt="icono" className="icon_format"></img></div>
           </Card.Body>
         </Card>
            )}       
