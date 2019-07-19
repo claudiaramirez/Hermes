@@ -4,6 +4,20 @@ import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
 
 class SignUp extends Component {
+ /*    constructor(props) {
+        super(props); 
+        this.state = {
+            inputValue: '', 
+        }
+        this.handleInput = this.handleInput.bind(this); 
+    }
+    handleInput = (event) => {
+        const valor = event.target.value;
+        this.setState({
+            inputValue: valor
+        });
+    } */
+    
     render() {
         return (
             <div className="signup font-weight-bold">
