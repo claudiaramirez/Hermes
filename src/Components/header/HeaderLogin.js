@@ -9,8 +9,6 @@ import {
     Route,
   }
     from "react-router-dom";
-
-
 class HeaderLogin extends Component {
     constructor(props){
         super(props)
@@ -33,5 +31,4 @@ class HeaderLogin extends Component {
         );
     }
 }
-
 export default HeaderLogin;
