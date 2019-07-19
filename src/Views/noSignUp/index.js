@@ -4,6 +4,7 @@ import Container from 'react-bootstrap/Container'
 import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col';
 import '../../Components/header/header.css'; 
+
 import {data} from './data.js';
 
 class noSignUp extends Component {

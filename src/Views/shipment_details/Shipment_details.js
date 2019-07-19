@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import Card from 'react-bootstrap/Card';
 import './Shipment_details.css';
-import ShippingCompanyLogo from '../../assets/fedex_logo.png';
+import ShippingCompanyLogo from '../../assets/dhl_logo.jpg';
 import { detalle_guia } from "../../data/detalle_guia.js";
 import Badge from 'react-bootstrap/Badge';
 import Accordion from 'react-bootstrap/Accordion';
