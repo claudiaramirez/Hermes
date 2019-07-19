@@ -18,6 +18,17 @@ class GuideList extends Component {
        }
    }
 
+/*    listData = () => {
+        const url = ""
+        let userRegister = fetch(url, {
+            method: 'GET', 
+            body: JSON.stringify(Lista_de_guia), 
+            headers:{
+              'Content-Type': 'application/json'
+        }}) 
+        
+   } */
+
     render() {
 
 
