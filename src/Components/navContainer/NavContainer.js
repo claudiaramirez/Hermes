@@ -6,6 +6,7 @@ import {
   import Login from "../../Views/login/index";
   import GuideList from "../../Views/guideList/guideList";
   import Signup from "../../Views/signup/index"
+import Shipment_details from '../../Views/shipment_details/Shipment_details';
 
 
 class NavContainer extends Component {
@@ -15,7 +16,7 @@ class NavContainer extends Component {
                  <Route path="/" exact component={Login} />
                  <Route path="/signup"  component={Signup} />
                 <Route path="/list" component={GuideList} />
-                <Route path="/detalle" component={GuideList} />
+                <Route path="/detalle" component={Shipment_details} />
               
             </div>
         );
