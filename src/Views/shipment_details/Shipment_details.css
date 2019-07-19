@@ -1,0 +1,9 @@
+.card-format{
+    display: flex;
+    justify-content: center;
+}
+
+
+.img-size{
+    width: 50px;
+}
