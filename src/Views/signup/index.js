@@ -13,18 +13,14 @@ class SignUp extends Component {
             email: '',
             password: '',
         }
-        this.signUp = this.signUp.bind(this); 
+        this.submit = this.submit.bind(this);
     };
 
-    signUp = () => {
-        const user = this.state;
-        console.log(user)
-    }; 
-    
-
-
-    submit(event){
+    submit = (event) => {
         event.preventDefault();
+        const user = this.state;
+        console.log(user);
+        this.props.history.push('./list')
     }
 
         render() {
@@ -33,7 +29,7 @@ class SignUp extends Component {
                 <HeaderLogin props={this.props}></HeaderLogin>
             
             <div className="signup font-weight-bold">
-                <Form>
+                <Form onSubmit={this.submit}>
                 <Form.Group controlId="formBasicName">
 
                         <Form.Label>Nombre</Form.Label>
@@ -68,7 +64,7 @@ class SignUp extends Component {
                         <span>Acepto los <a className="link-terminos" target="_blank" href="">Términos y Condiciones</a></span> 
                     </Form.Group>
 
-                    <Button variant="primary" type="submit" className="btn-signup" value={this.state} onClick={this.signUp}>Registrate</Button>
+                    <Button variant="primary" type="submit" className="btn-signup" value={this.state}>Registrate</Button>
                     </Form>
             </div>
             </div>
