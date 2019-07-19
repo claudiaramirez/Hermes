@@ -7,6 +7,7 @@ import {
   import Main from "../Components-Router/Home";
   import Stuff from "../Components-Router/Stuff";
   import Contact from "../Components-Router/Contact";
+  import Signup from "../../Views/signup/index"
 
 
 class NavContainer extends Component {
@@ -14,7 +15,7 @@ class NavContainer extends Component {
         return (
             <div className="nav-container">
                  <Route path="/" exact component={Login} />
-                 <Route path="/main"  component={Main} />
+                 <Route path="/signup"  component={Signup} />
                 <Route path="/stuff" component={Stuff} />
                 <Route path="/contact" component={Contact} />
               
