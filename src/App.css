@@ -17,6 +17,7 @@ ul.header li {
     padding: 20px;
     display: inline-block;
     padding-top: 10vh;
+    display: none;
   
     
 }
