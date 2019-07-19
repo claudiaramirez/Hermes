@@ -2,11 +2,25 @@ import React, { Component } from 'react';
 import './signup.css'; 
 import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
+import Home from '../../Components/Components-Router/Home';
+
 
 class SignUp extends Component {
+    state = {
+        SignUpSuccess: false,
+      };
+
+      SingUpEvent(e) {
+          e.preventDefault();
+        const status = this.state.SignUpSuccess
+        this.setState({ status: true });
+      }
+
     render() {
+
         return (
             <div className="signup font-weight-bold">
+
                 <Form>
                 <Form.Group controlId="formBasicEmail">
                         <Form.Label>Nombre</Form.Label>
@@ -28,7 +42,8 @@ class SignUp extends Component {
                         <Form.Check className="check" type="checkbox" />
                         <span>Acepto los <a className="link-terminos" target="_blank" href="">Términos y Condiciones</a></span> 
                     </Form.Group>
-                        <Button className="btn-signup" type="submit">Registrate</Button>
+
+                    <Button variant="primary" type="submit" className="btn-signup" onSubmit={this.SingUpEvent}>Registrate</Button>
                     </Form>
             </div>
         );
