@@ -28,7 +28,7 @@ class SignUp extends Component {
                         <Form.Check className="check" type="checkbox" />
                         <span>Acepto los <a className="link-terminos" target="_blank" href="">Términos y Condiciones</a></span> 
                     </Form.Group>
-                    <Button variant="primary" type="submit">Registrate</Button>
+                        <Button className="btn-signup" type="submit">Registrate</Button>
                     </Form>
             </div>
         );
