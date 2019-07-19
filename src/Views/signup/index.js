@@ -6,12 +6,9 @@ import Home from '../../Components/Components-Router/Home';
 
 
 class SignUp extends Component {
-
-    render() {
-
+        render() {
         return (
             <div className="signup font-weight-bold">
-
                 <Form>
                 <Form.Group controlId="formBasicEmail">
                         <Form.Label>Nombre</Form.Label>
