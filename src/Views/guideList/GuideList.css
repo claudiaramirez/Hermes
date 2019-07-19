@@ -1,22 +1,21 @@
-
 .header_format{
     background: #f88181;
     color: black;
-}
-
-.icon_format{
+ }
+ 
+ .icon_format{
     width: 8%;
     float: right;
-}
-.card-title{
+ }
+ .card-title{
     color: #3566ac !important;
  }
-
+ 
  .text-card-format{
     color: black;
     text-align: left;
  }
-
+ 
  .envio{
     width: 100%;
     height: 50px;
@@ -25,42 +24,42 @@
  .title-envio{
      font-weight: 600;
      font-size: 2rem;
-    
-}
-.header_format{
+ 
+ }
+ .header_format{
     width: 33.33%;
     color: #fff;
     border: none;
     background-color: transparent;
     text-align: center;
-   
-}
-.header_format:hover{
-  
+ 
+ }
+ .header_format:hover{
+ 
     color: #fff;
     border: none;
-   
-   
-}
-.card-body{
+ 
+ 
+ }
+ .card-body{
     display: inline-block;
     width: 100%;
-    /* font-size: 0; */
-}
-
-.card-item{
-    margin-top: 30px; 
+    font-size: 1rem;
+ }
+ 
+ .card-item{
+    margin-top: 30px;
     width: 95%;
     margin: auto;
     margin-top: 30px;
-
-}
-.ounded-circle {
+ 
+ }
+ .ounded-circle {
     display: inline-block;
     width: 30%;
-
-}
-.card-title{
+ 
+ }
+ .card-title{
     display: inline-block;
     width: 70%;
-}
+ }
