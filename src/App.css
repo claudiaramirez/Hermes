@@ -1,0 +1,21 @@
+navbar-login{
+    display: none;
+}
+ul.header li {
+    display: inline;
+    list-style-type: none;
+    margin: 0;
+  }
+  ul.header {
+    background-color: blue; 
+    padding: 0;
+    height: 15vh;
+  }
+  ul.header li a {
+    color: #FFF;
+    font-size: 12pt;
+    text-decoration: none;
+    padding: 20px;
+    display: inline-block;
+    padding-top: 10vh;
+}

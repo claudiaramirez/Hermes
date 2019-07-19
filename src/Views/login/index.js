@@ -19,7 +19,7 @@ class Login extends Component {
             <div>
             <HeaderLogin props={this.props}></HeaderLogin>
             <div className="signup font-weight-bold">
-                <Form onSubmit={()=>this.props.history.push('./stuff')}>
+                <Form onSubmit={()=>this.props.history.push('./list')}>
                 <Form.Group controlId="formBasicEmail">
                         <Form.Label>Nombre</Form.Label>
                         <Form.Control className="input-signup" type="email" placeholder="Escribe tu nombre completo" />
