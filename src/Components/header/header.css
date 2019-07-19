@@ -10,6 +10,10 @@ body {
     text-align: center;
     color: #fff;
 }
+.continue{
+    position: absolute;
+    bottom: 20px;
+}
 
 
 

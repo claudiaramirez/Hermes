@@ -1,11 +1,24 @@
 .card-format{
-    display: flex;
-    justify-content: center;
+    /* display: flex;
+    justify-content: center; */
 }
-
-
 .img-size{
-    width: 100px;
-    border-radius: 50%; 
+    display: inline-block;
+    width: 30%;
+}
+.card{
+    width: 100% !important;
+}
+.card-body{
+    display: inline-block;
+    width: 100%;
+    font-size: 0;
+}
+.card-title{
+    display: inline-block;
+    width: 70%;
+    vertical-align: top;
+    padding-left: 15px;
+    
 }
 
