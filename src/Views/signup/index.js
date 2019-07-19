@@ -5,9 +5,12 @@ import Button from 'react-bootstrap/Button';
 import Home from '../../Components/Components-Router/Home';
 import HeaderLogin from '../../Components/header/HeaderLogin';
 
+
+
 class SignUp extends Component {
     constructor(props) {
         super(props);
+
         this.state = {
             name: '',
             email: '',
