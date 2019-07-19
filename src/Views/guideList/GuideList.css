@@ -1,9 +1,19 @@
+.card-title{
+    color: #3566ac !important;
+}
+
 .header_format{
     background: #f88181;
     color: black;
 }
 
+
 .icon_format{
     width: 8%;
+    float: right;
+}
+
+.icon_forma{
+    width: 14%;
     float: right;
 }
