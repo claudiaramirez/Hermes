@@ -23,10 +23,13 @@ class App extends Component {
               <Link to="/">Login</Link>
             </li>
             <li>
-              <Link to="/signup/" >Sign Up</Link>
+              <Link to="/signup/">Sign Up</Link>
             </li>
             <li>
               <Link to="/list/">En tránsito</Link>
+            </li>
+            <li>
+              <Link to="/detalle/">Detalle de Envío </Link>
             </li>
           </ul>
         </nav>
