@@ -4,6 +4,7 @@ import HeaderApp from './Components/header/HeaderApp';
 import Login from './Views/login'; 
 
 import Home from './Components/Home/Home';
+
 import {
   Route,
   BrowserRouter,
@@ -15,7 +16,6 @@ import NavContainer from "./Components/navContainer/NavContainer"
 
 
 class App extends Component {
-
   render() {
     return (
       <div className="App">
@@ -44,8 +44,6 @@ class App extends Component {
          
       </div>
     </BrowserRouter>
-
-    
     </div>
     
     );

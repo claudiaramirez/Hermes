@@ -26,6 +26,7 @@ class Login extends Component {
                         <Form.Text className="text-muted">
                         </Form.Text>
                     </Form.Group>
+
                     <Form.Group controlId="formBasicEmail">
                         <Form.Label>Email</Form.Label>
                         <Form.Control className="input-signup" type="email" placeholder="ejemplo@correo.com" />
@@ -36,13 +37,9 @@ class Login extends Component {
                         <Form.Label>Contraseña</Form.Label>
                         <Form.Control className="input-signup" type="password" placeholder="8-10 caracteres" />
                     </Form.Group>
-                    <Form.Group controlId="formBasicChecbox">
-                        <Form.Check className="check" type="checkbox" />
-                        <span>Acepto los <a className="link-terminos" target="_blank" href="">Términos y Condiciones</a></span> 
-                    </Form.Group>
-                    <Button variant="primary" type="submit">Registrate</Button>
+                        <Button className="btn-signup" type="submit">Iniciar Sesión</Button>
                     </Form>
-                    </div>
+            </div>
         );
     }
 
