@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/Hermes/static/css/main.bb3db809.chunk.css",
+    "main.js": "/Hermes/static/js/main.3f54a30b.chunk.js",
+    "main.js.map": "/Hermes/static/js/main.3f54a30b.chunk.js.map",
+    "runtime~main.js": "/Hermes/static/js/runtime~main.686a1333.js",
+    "runtime~main.js.map": "/Hermes/static/js/runtime~main.686a1333.js.map",
+    "static/js/2.065486ca.chunk.js": "/Hermes/static/js/2.065486ca.chunk.js",
+    "static/js/2.065486ca.chunk.js.map": "/Hermes/static/js/2.065486ca.chunk.js.map",
+    "index.html": "/Hermes/index.html",
+    "precache-manifest.6a0e85bc88057c52034b25a183d88b30.js": "/Hermes/precache-manifest.6a0e85bc88057c52034b25a183d88b30.js",
+    "service-worker.js": "/Hermes/service-worker.js",
+    "static/css/main.bb3db809.chunk.css.map": "/Hermes/static/css/main.bb3db809.chunk.css.map"
+  }
+}
