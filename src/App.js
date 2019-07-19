@@ -18,15 +18,16 @@ class App extends Component {
   render() {
     return (
       <div className="App">
+      
       <BrowserRouter >
       <div>
         <nav>
           <ul>
             <li>
-              <Link to="/">Home</Link>
+              <Link to="/">Login</Link>
             </li>
             <li>
-              <Link to="/">Main</Link>
+              <Link to="/signup/">Sign Up</Link>
             </li>
             <li>
               <Link to="/stuff/">About</Link>
