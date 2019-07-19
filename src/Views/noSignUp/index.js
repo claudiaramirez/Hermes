@@ -65,7 +65,7 @@ class noSignUp extends Component {
                 <Button onClick={this.filterByGuideNum} variant="danger" type="submit">Consultar</Button>
 
                 <div>{data1}</div>
-                <p>Para ver mas información <a className="link-terminos" href="www.google.com" target="_blank">registrate</a> o <a className="link-terminos" href="www.google.com" target="_blank">inicia sesión</a></p>
+                <p className="ver-mas">Para ver mas información <a className="link-terminos" href="www.google.com" target="_blank">registrate</a> o <a className="link-terminos" href="www.google.com" target="_blank">inicia sesión</a></p>
             </div>
         );
     }
