@@ -45,7 +45,7 @@
 .card-body{
     display: inline-block;
     width: 100%;
-    font-size: 0;
+    /* font-size: 0; */
 }
 
 .card-item{
