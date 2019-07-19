@@ -1,6 +1,3 @@
-.card-title{
-    color: #3566ac !important;
-}
 
 .header_format{
     background: #f88181;
@@ -11,8 +8,6 @@
     width: 8%;
     float: right;
 }
-
-.icon_forma{
-    width: 14%;
-    float: right;
-}
+.card-title{
+    color: #3566ac !important;
+ }

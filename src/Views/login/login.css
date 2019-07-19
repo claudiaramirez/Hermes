@@ -24,14 +24,20 @@
     border-radius: 25px;
     background-color: #ed3833;
     border: 1px solid #ed3833
-
 }
+
 .btn-signup.btn.btn-primary:hover{
     color:#ed3833;
     background-color: #fff;
     border: 1px solid #ed3833;
-
 }
-.forgot-pass{
 
+.no-user {
+    margin: 0 auto; 
+    width: 80%; 
+}
+
+.filter-guide {
+    border-radius: 15px; 
+    width: 100%; 
 }

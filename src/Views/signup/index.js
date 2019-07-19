@@ -75,8 +75,6 @@ class SignUp extends Component {
                             <Button variant="primary" type="submit" className="btn-signup" value={this.state}>Registrate</Button>
                         </Form>
                     </div>
-                    <p>Continuar sin registrarme</p>
-
             </div>
         );
     }

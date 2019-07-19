@@ -3,7 +3,10 @@ import logo from '../../assets/logo_white.png';
 import Container from 'react-bootstrap/Container'
 import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col';
+import Button from 'react-bootstrap/Button';
 import '../../Components/header/header.css'; 
+import '../../Views/login/login.css'; 
+
 import {data} from './data.js';
 
 class noSignUp extends Component {
@@ -23,8 +26,6 @@ class noSignUp extends Component {
                 this.setState({
                     item: element
                 })
-            } else if(this.state.guide_num !== element.num_guia){
-                console.log('No funciona')
             }
         })
        
@@ -47,7 +48,7 @@ class noSignUp extends Component {
             })
 
         return (
-            <div>
+            <div className="no-user">
                  <div className='header-login'>
                 <Container>
                     <Row>
@@ -55,15 +56,16 @@ class noSignUp extends Component {
                     </Row>
                 </Container>    
             </div>
-                <input placeholder="Buscar por número de guía" 
+                <input className="filter-guide" placeholder="Buscar por número de guía" 
                 value={this.state.guide_num} onChange={(event)=>{
                                     this.setState({
                                         guide_num: event.target.value
                                     })
                                 }}></input>
-                <button onClick={this.filterByGuideNum}>Consultar</button>
+                <Button onClick={this.filterByGuideNum} variant="danger" type="submit">Consultar</Button>
+
                 <div>{data1}</div>
-                <p>Para ver mas información <a href="www.google.com" target="_blank">registrate</a> o <a href="www.google.com" target="_blank">inicia sesión</a></p>
+                <p>Para ver mas información <a className="link-terminos" href="www.google.com" target="_blank">registrate</a> o <a className="link-terminos" href="www.google.com" target="_blank">inicia sesión</a></p>
             </div>
         );
     }
